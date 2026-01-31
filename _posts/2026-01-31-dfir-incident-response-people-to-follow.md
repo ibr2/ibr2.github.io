@@ -1,6 +1,6 @@
 ---
 title: "20 DFIR/IR People to Follow on LinkedIn"
-date: 2026-01-31 12:00:00 -0800
+date: 2026-01-31 11:45:00 -0800
 categories: [dfir, incident-response, curation]
 ---
 
