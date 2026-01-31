@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="card">
+  <h2>Latest posts</h2>
+  <ul class="list">
+    {% for post in site.posts limit: 5 %}
+      <li>
+        <div class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</div>
+        <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+        {% if post.excerpt %}<div class="muted">{{ post.excerpt | strip_html | truncate: 140 }}</div>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description | escape }}" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">
+          <a class="logo" href="/">ONXYX</a>
+          <span class="tag">{{ site.description }}</span>
+        </div>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+          <a href="/about/">About</a>
+        </div>
+      </div>
+
+      <div class="hero">
+        {{ content }}
+      </div>
+
+      <div class="footer">
+        <div>© {{ "now" | date: "%Y" }} ONXYX · Built on GitHub Pages</div>
+      </div>
+    </div>
+  </body>
+</html>
