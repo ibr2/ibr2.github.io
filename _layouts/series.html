@@ -13,7 +13,7 @@ layout: default
 
 <ul class="list">
   {% assign series = page.series | default: page.category %}
-  {% assign series_posts = site.posts | where_exp: "post", "post.categories contains series" | sort: "date" %}
+  {% assign series_posts = site.posts | where_exp: "post", "post.categories contains series" | sort: "codex" %}
   {% for post in series_posts %}
     <li>
       <div class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</div>
